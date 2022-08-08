@@ -5,7 +5,13 @@
   </a>
 </p>
 
-> This repo contains simplified question generator model pipeline. This is a part of [Quizzy](https://github.com/Karthick47v2/quizzzy/tree/main) project, you can see the model in action there.
+This repo contains simplified question generator model pipeline. This is a part of [Quizzy](https://github.com/Karthick47v2/quizzzy/tree/main) project, you can see the model in action there. Generating questions by finetuning T5 transformer on both SQuAD and SciQ datasets. `Context`, `Question` and `Answer` extracted from datasets. `Context` and `Answer` will be given to model as input in order to generate `Question`. SQuAD is a reading comprehension dataset, model trained on that dataset is used for general purpose question generation and SciQ contains science exam questions and context, model trained on that dataset used specifically for physics, chemistry and biology related question generation on [Quizzy](https://github.com/Karthick47v2/quizzzy/tree/main) application.
+
+### Transformer model input
+
+```
+"context: {context} answer: {answer}"
+```
 
 ## Dataset
 
