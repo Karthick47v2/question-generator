@@ -36,6 +36,8 @@ This repo contains simplified question generator model pipeline. This is a part 
 
 ## Citation
 
+### SQuAD
+
 ```
 @inproceedings{rajpurkar-etal-2016-squad,
     title = "{SQ}u{AD}: 100,000+ Questions for Machine Comprehension of Text",
@@ -53,6 +55,8 @@ This repo contains simplified question generator model pipeline. This is a part 
     pages = "2383--2392",
 }
 ```
+
+### SciQ
 
 ```
 @inproceedings{SciQ,
