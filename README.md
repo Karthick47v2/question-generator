@@ -13,6 +13,10 @@ This repo contains simplified question generator model pipeline. This is a part 
 "context: {context} answer: {answer}"
 ```
 
+### Prerequisite
+
+- Python 3.7 or newer.
+
 ## Dataset
 
 - **[The Standford Question Answering Dataset - SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)**
@@ -20,9 +24,9 @@ This repo contains simplified question generator model pipeline. This is a part 
 
 ## Usage
 
-> All dataset links available in respective notebook. SciQ dataset contains context related to Physics, Chemistry and Biology exam questions with context and SQuAD datast is a reading comprehension dataset. So, choose a dataset suitable for you.
+> All dataset links available in notebook. SciQ dataset contains context related to Physics, Chemistry and Biology exam questions with context and SQuAD datast is a reading comprehension dataset. So, choose a dataset suitable for you.
 
-- Export training dataset from `sciq_data_extraction.ipynb` (SciQ) or `squad_data_extraction` (SQuAD).
+- Export training dataset from `data_extraction.ipynb`.
 - Run `train.ipynb` to start training.
 
 > Skip ONNX conversion and quantization steps if you are using GPU for inference. [fastT5](https://github.com/Ki6an/fastT5) is used to convert PyTorch model to ONNX which only supports CPU version of onnxruntime currently.
